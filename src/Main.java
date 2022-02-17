@@ -29,14 +29,9 @@ public class Main {
                 System.out.printf("Ответ: %.4f\n", ad.multiply(first, two));
             }
             if ("/".equals(operator)) {
-                if (two == 0) {
-                    System.err.println("На 0 делить нельзя!");
-                    scanner.close();
-                    return;
-                }
                 System.out.printf("Ответ: %.4f\n", ad.div(first, two));
             }
-            System.out.println("Для выхода из калькулятора вместо оператора введите EXIT");
+            System.out.println("Для выхода из калькулятора вместо оператора введите: exit");
         }
     }
 }

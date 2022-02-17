@@ -40,6 +40,11 @@ public class Addition {
      * @return
      */
     public Double div( Double val1, Double val2){
+        if (val2 == 0) {
+            System.err.println("На 0 делить нельзя!");
+            //throw new IllegalArgumentException();
+            return null;
+        }
         return val1 / val2;
     }
 
