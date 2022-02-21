@@ -17,11 +17,12 @@ public class ArrayInspector {
         String find = "";
         for (String word : words) {
             int buff = word.length();
-            if (buff > max)
+            if (buff > max) {
                 max = buff;
-            find = word;
+                find = word;
+            }
         }
-        System.out.println("Самое длинное слово в массиве: "+ find);
+        System.out.println("Самое длинное слово в массиве: " + find);
         scanner.close();
     }
 }
